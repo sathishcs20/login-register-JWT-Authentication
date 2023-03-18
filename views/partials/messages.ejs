@@ -1,0 +1,39 @@
+<% if(typeof errors !='undefined'){  %>
+    <% errors.forEach(function(error){ %>
+        <% if(error.colour === 'red'){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error.msg %>
+              </div>
+              <% } %>
+              <% if(error.colour === 'green'){ %>
+                <div class="alert alert-success" role="alert">
+                    <%= error.msg %>
+                  </div>
+                  <% } %>
+      
+
+
+    <% }); %>
+    
+<% } %>
+<% if(typeof e !='undefined'){  %>
+  <% e.forEach(function(error){ %>
+      <% if(error.colour === 'red'){ %>
+          <div class="alert alert-danger" role="alert">
+              <%= error.msg %>
+            </div>
+            <% } %>
+            <% if(error.colour === 'green'){ %>
+              <div class="alert alert-success" role="alert">
+                  <%= error.msg %>
+                </div>
+                <% } %>
+    
+
+
+  <% }); %>
+  
+<% } %>
+
+
+
